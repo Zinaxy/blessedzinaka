@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +18,31 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+* {
+  font-family: Outfit;
+}
+
+.input-text {
+  @apply flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-dark/30 dark:border-white/90;
+}
+.input-textarea {
+  @apply w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-dark/30 dark:border-white/90;
+}
+/* btn */
+.btn-light {
+  @apply hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 dark:border-gray-400 rounded-full ml-4 dark:border-white/50 hover:bg-primary hover:text-light;
+}
+.btn-primary {
+  @apply px-10 py-3 border border-white bg-primary text-white rounded-full flex items-center gap-2 hover:bg-lightHover;
+}
+.btn-secondary {
+  @apply px-10 py-3 border border-gray-500 rounded-full flex items-center gap-2 dark:text-dark dark:bg-white hover:bg-dark hover:text-light;
+}
+.list-skill {
+  @apply flex flex-col items-center justify-center w-12 sm:w-14 aspect-square cursor-pointer hover:-translate-y-1 duration-500;
+}
+.card {
+  @apply border-[0.5px] border-primary rounded-xl p-6 cursor-pointer  hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-dark/50;
 }
